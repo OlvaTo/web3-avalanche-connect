@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet Connection – Avalanche</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <img
+          src="AvalancheLogo_Horizontal_1C_Red.png"
+          alt="Avalanche"
+          class="logo"
+        />
+        <h2>Wallet Connection</h2>
+      </div>
+
+      <div class="button-flex">
+        <button id="connectBtn">Connect Wallet</button>
+        <button id="disconnectBtn" disabled>Disconnect</button>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <span class="label">Wallet Address</span>
+          <span id="address">-</span>
+          <small id="identity"></small>
+        </div>
+
+        <div class="row">
+          <span class="label">Network</span>
+          <span id="network">-</span>
+        </div>
+
+        <div class="row">
+          <span class="label">Balance (AVAX)</span>
+          <span id="balance">-</span>
+        </div>
+
+        <div id="status" class="status warning">Not Connected</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
